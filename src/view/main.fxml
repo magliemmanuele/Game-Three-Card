@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Controllore">
+   <children>
+      <Label layoutX="14.0" layoutY="15.0" text="Game Three Card" textFill="#1e05a3">
+         <font>
+            <Font name="Bodoni MT Black" size="22.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="315.0" text="Totale partite:" />
+      <Label fx:id="TotPartite" layoutX="129.0" layoutY="315.0" prefHeight="15.0" prefWidth="39.0" />
+      <Label layoutX="32.0" layoutY="341.0" text="Totale vittorie:" />
+      <Label fx:id="TotVittorie" layoutX="138.0" layoutY="341.0" prefHeight="15.0" prefWidth="39.0" />
+      <Label layoutX="43.0" layoutY="366.0" text="\% vittorie:" />
+      <Label fx:id="PercentVittorie" layoutX="129.0" layoutY="366.0" prefHeight="15.0" prefWidth="39.0" />
+      <Button fx:id="Carta1" layoutX="50.0" layoutY="92.0" mnemonicParsing="false" onAction="#premi_0" prefHeight="160.0" prefWidth="112.0" text="Carta ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="Carta2" layoutX="231.0" layoutY="147.0" mnemonicParsing="false" onAction="#premi_1" prefHeight="160.0" prefWidth="112.0" text="Carta ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="Carta3" layoutX="412.0" layoutY="92.0" mnemonicParsing="false" onAction="#premi_2" prefHeight="160.0" prefWidth="112.0" text="Carta ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="135.0" layoutY="42.0" text="Per Vincere Devi Trovare L'Asso" textFill="#804040">
+         <font>
+            <Font name="Bodoni MT Condensed" size="37.0" />
+         </font></Label>
+      <Button fx:id="Nuova" layoutX="441.0" layoutY="344.0" mnemonicParsing="false" onAction="#nuovaPartita" text="Nuova Partita">
+         <font>
+            <Font name="Broadway" size="15.0" />
+         </font></Button>
+      <Label fx:id="Info" layoutX="231.0" layoutY="338.0" prefHeight="15.0" prefWidth="138.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+   </children>
+</Pane>
